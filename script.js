@@ -31,7 +31,8 @@ new Vue({
                 text: this.newTask,
                 done: false,
             }
-            //controllo sul il campo lasciato vuoto senza digitazione
+            //controllo sul campo lasciato vuoto senza digitazione
+            //non viene aggiunto niente all'array todolist
             if(this.newTask === ""){
                 return;
             }
