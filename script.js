@@ -15,11 +15,18 @@ new Vue({
             done: false,
         },
     ],
-    
+    },
     methods:{
-        test: function(indexTask){
-            return console.log("button cliccato con indice"+ indexTask);
+        /* MILESTONE 2 */
+        deleteTask: function(indexTask){
+            //return console.log("button cliccato con indice"+ indexTask);
+            return this.toDoList.splice(indexTask, 1);
+        },
+
+        addTask: function(){
+            
         }
+
     }
-    }
+    
 });

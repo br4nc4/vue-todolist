@@ -32,14 +32,18 @@
                                             <label class="form-check-label" :class="{'text-decoration-line-through': task.done, 'text-secondary': task.done}" :for="'INDICE_' + i">{{task.text}}</label>
                                         </div>
 
-                                        <button @click="test(i)" class="btn btn-link btn-sm text-secondary">
+                                        <!-- MILESTONE 2 -->
+                                        <button @click="deleteTask(i)" class="btn btn-link btn-sm text-secondary">
                                             <i class="fa-solid fa-xmark"></i>
                                         </button>
                                     </li>
                                 </ul>
                             </div>
 
-                            
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button class="btn btn-outline-secondary">aggiungi</button>
+                            </div>
                         </div>
                     </div>
 
