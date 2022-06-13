@@ -15,6 +15,8 @@ new Vue({
             done: false,
         },
     ],
+    newTask: "",
+
     },
     methods:{
         /* MILESTONE 2 */
@@ -23,9 +25,14 @@ new Vue({
             return this.toDoList.splice(indexTask, 1);
         },
 
+        /* MILESTONE 3 */
         addTask: function(){
-            
-        }
+            newTask ={
+                text: this.newTask,
+                done: false,
+            }
+            return this.toDoList.push(newTask);
+        },
 
     }
     

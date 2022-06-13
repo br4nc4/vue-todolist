@@ -41,8 +41,8 @@
                             </div>
 
                             <div class="input-group">
-                                <input type="text" class="form-control">
-                                <button class="btn btn-outline-secondary">aggiungi</button>
+                                <input type="text" class="form-control" v-model="newTask">
+                                <button class="btn btn-outline-secondary" @click="addTask()">aggiungi</button>
                             </div>
                         </div>
                     </div>
