@@ -17,7 +17,9 @@ new Vue({
     ],
     
     methods:{
-        
+        test: function(indexTask){
+            return console.log("button cliccato con indice"+ indexTask);
+        }
     }
     }
 });
