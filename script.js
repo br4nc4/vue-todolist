@@ -31,6 +31,11 @@ new Vue({
                 text: this.newTask,
                 done: false,
             }
+            //controllo sul il campo lasciato vuoto senza digitazione
+            if(this.newTask === ""){
+                return;
+            }
+            
             return this.toDoList.push(newTask);
         },
 
